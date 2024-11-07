@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    height: 100vh; width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; padding: 0;
+    font-family: "Audiowide", sans-serif;
+}
+
+h1{
+    background: linear-gradient(90deg, Red, blue);
+    color: transparent;
+    background-clip: text;
+    scale: 1.2;
+    letter-spacing: +2px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+#text-field{
+    width: 40%;
+    font-size: 18px;
+    padding-left: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+#generate-button{
+    margin-bottom: 2%;
+    font-size: 15px;
+    cursor: pointer;
+    border: solid rgba(0, 0, 0, 0.4);
+    padding: 0.5%;
+}
+#generate-button:hover{
+    background-color: black;
+    color: white;
+}
+#audio-player{
+    display: none;
+}
+#result-message{
+    margin-top: 1%;
+}
