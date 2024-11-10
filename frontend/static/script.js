@@ -18,7 +18,7 @@ function sendString(){
 
     console.log(input_string);
     
-    const POST_URL = "http://127.0.0.1:5000/audio";
+    const POST_URL = "https://texttospeech-o26h.onrender.com/audio";
     
     fetch(POST_URL, {
         method: "POST",
