@@ -8,13 +8,23 @@
 </head>
 <body>
     <h1>Welcome to Text to Speech Converter</h1>
-    <input type="text" placeholder="Enter to convert to Speech" id="text-field"/>
-    <div id="generate-button">Generate Speech</div>
-    <audio controls id="audio-player">
-        <source id="audio-source" src="../output.mp3" type="audio/mpeg">
+    <div class="search-container">
+        <input type="text" placeholder="Enter to convert to Speech" id="text-field"/>
+        <div id="generate-button">Generate</div>
+    </div>
+    <audio id="audio-player">
+        <source id="audio-source" type="audio/mpeg">
         Your browser does not support audio
     </audio>
     <div id="result-message"></div>
+    <div class="audio-player-interface">
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="actionButtons">
+            <div id="pauseButton">Pause/Play</div>
+            <div id="downloadButton">Download</div>
+        </div>
+        
+    </div>
     <script src="static/script.js"></script>
 </body>
 </html>
